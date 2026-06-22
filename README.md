@@ -1,31 +1,26 @@
-import pandas as pd
-import matplotlib.pyplot as plt
+# SCT_DS_4
 
-# Sample accident dataset
-data = {
-    "Weather": ["Clear", "Rain", "Clear", "Fog", "Rain", "Clear", "Fog", "Rain"],
-    "Severity": ["Low", "High", "Medium", "High", "Medium", "Low", "High", "Medium"],
-    "Road_Condition": ["Dry", "Wet", "Dry", "Wet", "Wet", "Dry", "Wet", "Wet"]
-}
+## Task 04: Traffic Accident Data Analysis
 
-df = pd.DataFrame(data)
+### Objective
+Analyze traffic accident data and identify patterns related to weather conditions and accident severity.
 
-# Weather distribution
-df["Weather"].value_counts().plot(kind="bar")
-plt.title("Accidents by Weather Condition")
-plt.xlabel("Weather")
-plt.ylabel("Number of Accidents")
-plt.tight_layout()
-plt.savefig("weather_accidents.png")
-plt.show()
+### Tools Used
+- Python
+- Pandas
+- Matplotlib
 
-# Severity distribution
-df["Severity"].value_counts().plot(kind="bar")
-plt.title("Accident Severity Distribution")
-plt.xlabel("Severity")
-plt.ylabel("Count")
-plt.tight_layout()
-plt.savefig("severity_distribution.png")
-plt.show()
+### Analysis Performed
+1. Accident distribution by weather condition.
+2. Accident severity distribution.
 
-print("Charts saved successfully!")
+### Visualizations
+- weather_accidents.png
+- severity_distribution.png
+
+### Key Insights
+- Accident frequency varies across weather conditions.
+- Severity levels can be compared using visualization.
+
+### Author
+Chandana Priya
